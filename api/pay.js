@@ -14,8 +14,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 });
 
 const CURRENCY    = "usd";
-const SUCCESS_URL = process.env.SUCCESS_URL  || "https://stripe.com";
-const CANCEL_URL  = process.env.CANCEL_URL   || "https://stripe.com";
+const SUCCESS_URL = process.env.SUCCESS_URL  || "https://illion-rent-pay.vercel.app/success.html";
+const CANCEL_URL  = process.env.CANCEL_URL   || "https://illion-rent-pay.vercel.app/pay";
 
 // ---------------------------------------------------------------------------
 // Handler
