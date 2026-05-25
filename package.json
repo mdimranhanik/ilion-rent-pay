@@ -1,0 +1,15 @@
+{
+  "name": "stripe-rent-link",
+  "version": "1.0.0",
+  "description": "Shared Stripe payment link — tenants type their own rent amount.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Local env files — NEVER commit real keys
+.env
+.env.local
+.env.*.local
+
+# Vercel build output
+.vercel/
+
+# OS junk
+.DS_Store
+Thumbs.db
