@@ -13,7 +13,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2023-10-16",
 });
 
-const CURRENCY    = "usd";
 const SUCCESS_URL = process.env.SUCCESS_URL  || "https://illion-rent-pay.vercel.app/success.html";
 const CANCEL_URL  = process.env.CANCEL_URL   || "https://illion-rent-pay.vercel.app/pay";
 
@@ -27,20 +26,8 @@ module.exports = async function handler(req, res) {
 
       line_items: [
         {
+          price: "price_1Td5SHLWAevwCubqgnOgb03M",
           quantity: 1,
-          price_data: {
-            currency: CURRENCY,
-            product_data: {
-              name: "Rent Payment",
-            },
-            // ↓ THIS is the "type any amount" box — only works with inline
-            //   price_data in a Checkout Session (not on Payment Links or
-            //   saved Prices).
-            custom_unit_amount: {
-              enabled: true,
-              // Stripe enforces a minimum of ~$0.50; no max needed.
-            },
-          },
         },
       ],
 
