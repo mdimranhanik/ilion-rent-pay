@@ -41,7 +41,7 @@ module.exports = async function handler(req, res) {
         },
         {
           key: "flat_number",
-          label: { type: "custom", custom: "Flat number" },
+          label: { type: "custom", custom: "Apartment number" },
           type: "text",
         },
         {
