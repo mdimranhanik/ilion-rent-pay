@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/pay",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/pay",
