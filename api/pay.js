@@ -51,6 +51,10 @@ module.exports = async function handler(req, res) {
         },
       ],
 
+      payment_intent_data: {
+        description: "Rent Payment - Ilion Housing Authority",
+      },
+
       success_url: SUCCESS_URL,
       cancel_url:  CANCEL_URL,
     });
